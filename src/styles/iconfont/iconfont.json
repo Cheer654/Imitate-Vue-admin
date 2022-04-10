@@ -1,0 +1,79 @@
+{
+  "id": "3228255",
+  "name": "imitate vue admin",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "800879",
+      "name": "love",
+      "font_class": "love",
+      "unicode": "e665",
+      "unicode_decimal": 58981
+    },
+    {
+      "icon_id": "6353306",
+      "name": "share",
+      "font_class": "share",
+      "unicode": "e86f",
+      "unicode_decimal": 59503
+    },
+    {
+      "icon_id": "9207697",
+      "name": "love",
+      "font_class": "aixin-xian",
+      "unicode": "e64d",
+      "unicode_decimal": 58957
+    },
+    {
+      "icon_id": "9940270",
+      "name": "education",
+      "font_class": "education",
+      "unicode": "e601",
+      "unicode_decimal": 58881
+    },
+    {
+      "icon_id": "9940284",
+      "name": "skill",
+      "font_class": "skill",
+      "unicode": "e604",
+      "unicode_decimal": 58884
+    },
+    {
+      "icon_id": "14441181",
+      "name": "question-mark",
+      "font_class": "question-mark",
+      "unicode": "e696",
+      "unicode_decimal": 59030
+    },
+    {
+      "icon_id": "5833053",
+      "name": "paper-plane",
+      "font_class": "paper-plane",
+      "unicode": "e732",
+      "unicode_decimal": 59186
+    },
+    {
+      "icon_id": "6664204",
+      "name": "size",
+      "font_class": "size",
+      "unicode": "e62a",
+      "unicode_decimal": 58922
+    },
+    {
+      "icon_id": "13782650",
+      "name": "compress-arrows",
+      "font_class": "compress-arrows",
+      "unicode": "e7a6",
+      "unicode_decimal": 59302
+    },
+    {
+      "icon_id": "14268743",
+      "name": "expand-arrows-alt",
+      "font_class": "expand-arrows-alt",
+      "unicode": "e8af",
+      "unicode_decimal": 59567
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+// views组件之间切换的动画效果
+// 新组件进入时，从侧边栏进入，自身的颜色遮挡侧边栏，所以这里不推荐使用transform
+.components-fade-enter-from {
+  opacity: 0;
+}
+
+.components-fade-leave-to {
+  transform: translateX(30px);
+  opacity: 0;
+}
+
+// 在组件离开时，新组件会被排斥到其它位置，在离开动作完成时，
+// 很明显地插入行为，利用absolute可以避免这种情况
+.components-fade-leave-active {
+  position: absolute;
+}
+
+.components-fade-enter-active,
+.components-fade-leave-active {
+  transition: all 0.5s ease-in-out;
+}
+
+// breadcrumb切换行为
+.breadcrumb-enter-from,
+.breadcrumb-leave-to {
+  opacity: 0;
+  transform: translateX(30px);
+}
+// 有BUG是元素离开时变成绝对定位，导致后面元素的位置发生变化，
+// 加上离开一瞬间最后的元素后显示分隔符(而vue-element-admin没有)，目前不知道解决方案
+.breadcrumb-leave-active {
+  position: absolute;
+}
+
+.breadcrumb-move,
+.breadcrumb-enter-active,
+.breadcrumb-leave-active {
+  transition: all 0.5s ease;
+}
+
+
+// transform: translate(20px, -15px) scale(0.5);
+// 切换icon动画
+
+.toggle-icon-enter-active {
+  animation: icon-enter 1s ease-in-out;
+}
+@keyframes icon-enter {
+  0% {
+    transform: translate(24px, -18px) scale(0.5);
+  }
+  20% {
+    transform: translate(16px, -15px) scale(0.6);
+  }
+  40% {
+    transform: translate(12px, -12px) scale(0.7);
+  }
+  60% {
+    transform: translate(8px, -9px) scale(0.8);
+  }
+  80% {
+    transform: translate(4px, -3px) scale(0.9);
+  }
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+}

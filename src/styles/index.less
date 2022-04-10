@@ -1,0 +1,50 @@
+@import './iconfont/iconfont.css';
+@import './transition.less';
+
+html {
+  height: 100%;
+}
+
+body {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+// 设置全屏背景颜色
+::backdrop {
+  background-color: white;
+}
+
+#app {
+  height: 100%;
+}
+
+.clearfix::after,
+.clearfix::before {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.todo-tip {
+  display: none;
+  position: absolute;
+  font-size: 12px;
+  padding: 3px 5px;
+  color: #66667F;
+  border: 1px solid black;
+  background-color: white;
+}
